@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="description" content="How to get in contact with me">
+    <!--SVG Image-->
+    <style>
+        img{
+            width: 10%;
+            height: auto;
+        }
+        </style>
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../images/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!--CSS, Normalize, and fonts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@700&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <!-- Put this on every page -->
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+    document.querySelector(".menu-icon").addEventListener("click", () => {
+      document.querySelector(".main-menu").classList.toggle("menu-show");
+    });
+    });
+    </script>
+</head>
+<body>
+    <header>
+      <div class="main-menu">
+        <div class="menu-icon">
+            <svg viewbox="0 0 60 60">
+                <line x1="5%" y1="50%" x2="95%" y2="50%" />
+                <line x1="5%" y1="50%" x2="95%" y2="50%" />
+              </svg>
+        </div>
+        <nav>
+            <img src="../images/AH-logo-star-web.png" alt="Logo of Andrea Hunter created with colorful lines making her initials, AH">
+            <ul>
+                <li><a href="../">Home</a></li>
+                <li><a href="../about">About Me</a></li>
+                <li><a href="../adlab">BYU Adlab</a></li>
+                <li><a href="../work">My Work</a></li>
+                <li><a href="../passion">Passion Projects</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main class="contactform">
+    <h1>Contact Form</h1>
+    <!-- <img class="formsvg" src="../images/happy-svgrepo-com.svg" alt="person jumping icon"> -->
+    <div class="hidden">
+        <svg>
+        <g>
+          <path d="M 50,100 A 1,1 0 0 1 50,0"/>
+        </g>
+        <g>
+          <path d="M 50,75 A 1,1 0 0 0 50,-25"/>
+        </g>
+        <defs>
+          <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color: var(--coralreef);stop-opacity:1" />
+            <stop offset="100%" style="stop-color: var(--daisy);stop-opacity:1" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <p class="formsubhead">If you want to get in contact with me, leave your info. in the form below!</p>
+     <section>
+      <div class="form-image-wrapper">
+        <svg class="starsmiley" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <title>star-eyes</title>
+          <path d="M256,0C114.84,0,0,114.84,0,256S114.84,512,256,512,512,397.16,512,256,397.16,0,256,0ZM150.39,145.17l20.5-41.53,20.5,41.53,45.83,6.66L204,184.16l7.84,45.64-41-21.55-41,21.55,7.84-45.64-33.17-32.32ZM394.76,332.41c0,.28-.1.54-.14.82a19.66,19.66,0,0,1-.69,3.79c-11.29,66-68.68,116.37-137.94,116.37S129.36,403.07,118.07,337a18.65,18.65,0,0,1-.7-3.79c0-.28-.11-.54-.15-.82h.07c0-.24-.07-.46-.07-.71a18.24,18.24,0,0,1,18-18.49H376.81a18.22,18.22,0,0,1,18,18.51c0,.25-.07.48-.07.71h.07ZM375.48,184.16l7.83,45.64-41-21.55-41,21.55,7.84-45.64L276,151.83l45.83-6.66,20.5-41.53,20.48,41.53,45.83,6.66Z" fill="#ffe100"/>
+        </svg>
+      <form>
+        <label for="fname">First name:</label>
+        <input type="text" name="fname" id="fname" required>
+        <label for="lname">Last name:</label>
+        <input type="text" name="lname" id="lname" required>
+        <label for="email">Email address:</label>
+        <input type="email" name="email" id="email" required>
+        <label for="phone">Phone number:</label>
+        <input type="tel" name="phone" id="phone">
+        <label for="linkedin">LinkedIn URL:</label>
+        <input type="url" name="linkedin" id="linkedin">
+        <fieldset>
+          <legend>How did you find my portfolio? (Check all that apply)</legend>
+          <input type="checkbox" id="byu" name="search" value="byu">
+          <label for="byu">BYU</label>
+          <input type="checkbox" id="google" name="search" value="google">
+          <label for="google">Google</label>
+          <input type="checkbox" id="linkedin" name="search" value="linkedin">
+          <label for="linkedin">LinkedIn</label>
+          <input type="checkbox" id="instagram" name="search" value="instagram">
+          <label for="instagram">Instagram</label>
+          <input type="checkbox" id="facebook" name="search" value="facebook">
+          <label for="facebook">Facebook</label>
+          <input type="checkbox" id="otherk" name="search" value="other">
+          <label for="other">Other</label>
+        </fieldset>
+        <fieldset>
+          <legend>Are you interested in setting up a call?</legend>
+          <input type="radio" name="talk" id="yes" value="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" name="talk" id="no" value="no">
+          <label for="no">No</label>
+          <input type="radio" name="talk" id="maybe" value="maybe">
+          <label for="maybe">Maybe</label>
+        </fieldset>
+        <label for="question">What questions do you have for me?</label>
+        <textarea name="question" id="question" rows="10" placeholder="Ask anything you want..."></textarea>
+        <button type="submit">Submit Now</button>
+      </form>
+    </div>
+    </section>
+  </main>
+</body>
+</html>
